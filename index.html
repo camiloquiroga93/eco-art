@@ -118,26 +118,26 @@
         </section>
         <section class="contact">
             <h2 id="contacto">Contacto</h2>
-            <form action="#">
+            <form action="form.php" id="form" class="remove" method="post">
 
                 <label for="nombre">
                     Nombre:
                 </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                 <label for="nombre">
                     Telefono:
                 </label>
-                <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+                <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
                 <label for="nombre">
                     Correo:
                 </label>
-                <input type="text" name="correo" id="correo" placeholder="Correo">
+                <input type="text" name="correo" id="correo" placeholder="Correo" required>
                 <label for="mensaje">
                     Mensaje:
                 </label>
                 <textarea name="mensaje" placeholder="Escriba su mensaje aquí" id="mensaje" cols="30" rows="10">
                         </textarea>
-                <input type="button" id="boton" value="Enviar">
+                <input type="submit" id="boton" value="Enviar">
 
             </form>
         </section>
