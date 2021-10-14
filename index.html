@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="menu">
             <figure class="logo">
@@ -32,7 +31,6 @@
             </button>
         </nav>
     </header>
-
     <main>
         <section class="home" id="home">
             <h1 class="banner_text"> ¡Seamos esa generación que se dio cuenta y empezó a cuidar el planeta! </h1>
@@ -41,8 +39,7 @@
                 <p id="texthome"> Son 100% naturales, ecológicos y biodegradables. No contienen químicos ni sustancias
                     tóxicas. Libres de parabenos y productos sintéticos. Contribuyen a la salud capilar potenciando sus
                     capacidades naturales. Creadas con amor y con toda
-                    la energía de la naturaleza. Libre de crueldad animal.🐰
-                </p>
+                    la energía de la naturaleza. Libre de crueldad animal.🐰 </p>
                 <article class="inicio_text_contenido">
                     <figure class="us">
                         <img id="img-c" src="img/Ecology_Monochromatic.svg" alt="">
@@ -56,7 +53,8 @@
                 <h2 id="titulo1">Sobre Eco Art</h2>
                 <p id="bienvenida">
                     Les damos la bienvenida a nuestro emprendimiento en cosmeticos sustentables 100% naturales, hechos a
-                    mano y con el ❤ Mi nombre es Sandra, con Pablo, este ultimo tiempo decidimos emprender diferente y
+                    mano y con el ❤ <br> Mi nombre es Sandra, con Pablo, este ultimo tiempo decidimos emprender
+                    diferente y
                     obvio con todo el amor. Por todo el contexto mundial
                     que venimos atravesando se nos hizo dificil para todos y nos mantuvo en casa mucho tiempo. Ya que
                     vemos el daño nocivo que generan las grandes producciones industriales y el uso excesivo deplasticos
@@ -75,9 +73,7 @@
             <h2 id="titulo1">Nuestros Productos</h2>
             <article class="contenido">
                 <article class="articulo">
-
                     <img src="img/lavanda.png" alt="" id="lavandaicon">
-
                     <h3 class="tituloproducto">Shampoo Solido</h3>
                     <ul class="ingredientes">
                         <li>Lavanda</li>
@@ -85,32 +81,24 @@
                         <li>Petalos de rosa</li>
                     </ul>
                     <a href="#contacto">Pedir Ahora</a>
-
                 </article>
                 <article class="articulo">
-
                     <img src="img/lavanda.png" alt="" id="lavandaicon">
                     <h3 class="tituloproducto">Acondicionador Solido</h3>
-                    <p>
                     <ul class="ingredientes">
                         <li>Lavanda</li>
                         <li>Manzanilla</li>
                         <li>Petalos de rosa</li>
                     </ul>
-                    </p>
                     <a href="#contacto">Pedir Ahora</a>
-
                 </article>
                 <article class="articulo">
                     <img src="img/lavanda.png" alt="" id="lavandaicon">
                     <h3 class="tituloproducto">Agua Micelar</h3>
                     <p id="ingredientes_parrafo"> Es un producto destinado a cuidar la limpieza facial. Descongestiona
                         poros, tonifica y refuerza la hidratación. Incluye ingredientes que son más necesarios para tu
-                        piel Vitamina B, E, C. <br>
-                    </p>
-
+                        piel Vitamina B, E, C. <br></p>
                     <a href="#contacto">Pedir Ahora</a>
-
                 </article>
             </article>
         </section>
@@ -127,49 +115,37 @@
                 </iframe>
             </article>
         </section>
-        </section>
         <section class="contact">
-            <h2 id="contacto">Contacto</h2>
-            <form action="form.php" id="form" class="remove" method="post">
-
-                <label for="nombre">
-                    Nombre:
-                </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                <label for="nombre">
-                    Telefono:
-                </label>
-                <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
-                <label for="nombre">
-                    Correo:
-                </label>
-                <input type="text" name="correo" id="correo" placeholder="Correo" required>
-                <label for="mensaje">
-                    Mensaje:
-                </label>
-                <textarea name="mensaje" placeholder="Escriba su mensaje aquí" id="mensaje" cols="30" rows="10">
-                        </textarea>
-                <input type="submit" id="boton" value="Enviar Mensaje">
-
-
-            </form>
-
+            <article>
+                <h2 id="contacto">Contacto</h2>
+                <i class="fa fa-envelope-o" aria-hidden="true" id="icons"></i><br>
+                <h1>ecoart.tienda@gmail.com</h1><br>
+                <i class="fa fa-whatsapp" aria-hidden="true" id="icons"></i><br>
+                <h1>+54 (011) 3694 3710</h1><br>
+                <a href="https://www.instagram.com/ecoart.tienda/"><i class="fa fa-instagram" aria-hidden="true" id="icons"></i></a>
+                <h1>@ecoart.tienda</h1> 
+            </article>
+            <article>
+                <h3>Dejanos un mensaje:</h3>
+                <form action="form.php" id="form" class="remove" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <label for="nombre">Telefono:</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
+                    <label for="nombre">Correo:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Escriba su mensaje aquí" id="mensaje" cols="30" rows="10"
+                        required></textarea>
+                    <input type="submit" id="boton" value="Enviar Mensaje">
+                </form>
+            </article>
         </section>
     </main>
     <footer>
-        <article class="partfooter_1">
-            <p>Cosmética natural, libre de crueldad 🐰 100% natural 🌱 Amigable con el planeta 🌎</p>
-        </article>
-        <article class="partfooter_2">
-            <p>📧 ecoart.tienda@gmail.com</p>
-        </article>
-        <article class="partfooter_3">
-            <p>
-                &copy; Copyright 2021. Camilo Quiroga.
-            </p>
-        </article>
+        <p>Cosmética natural, libre de crueldad 🐰 100% natural 🌱 Amigable con el planeta 🌎</p>
+        <p>&copy; Copyright 2021. Camilo Quiroga.</p>
     </footer>
-
 </body>
 
 </html>
