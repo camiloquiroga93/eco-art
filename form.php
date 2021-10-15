@@ -30,4 +30,3 @@ $result = $connection->query(
 if ( $result )  {
     header("Location: index.html");
 }
-}
