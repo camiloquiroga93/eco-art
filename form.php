@@ -27,7 +27,7 @@ $result = $connection->query(
     "INSERT INTO formulario (Nombre, Telefono, Correo, Mensaje) VALUES ('$nombre','$telefono','$correo','$mensaje')"
 );
 
-if ( $result ) = {
+if ( $result )  {
     header("Location: index.html");
 }
 }
