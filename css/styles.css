@@ -457,6 +457,14 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }  
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        padding-bottom: 25px;
     }
 }
 @media (min-width: 600px) {
@@ -478,4 +486,5 @@ footer {
         margin-right: 0%;
         margin-left: 15px;
     } 
+  
 }
