@@ -14,17 +14,17 @@ if ( !empty( $_POST["nombre"]) && is_string($_POST["nombre"]) &&
   // $telefono = $connection->real_escape_string($connection, $_POST["telefono"]);
    //$correo = $connection->real_escape_string($connection, $_POST["correo"]);
    //$mensaje = $connection->real_escape_string($connection, $_POST["mensaje"]);
-//} else {     header("Location: index.html");  } 
+ //}else {     header("Location: index.html");  } 
 
 $result = $connection->query( "INSERT INTO formulario (Nombre, Telefono, Correo, Mensaje) VALUES ('$nombre','$telefono','$correo','$mensaje')");
   if ( $result )  { 
-    ?>  <h3 class="ok">¡Mensaje enviado! </h3>
-    <?php
- } else {
-    ?> <h3 class="bad">¡Ups ha ocurrido un error!</h3>
-    <?php
- } else { 
-    ?> <h3 class="bad">¡Por favor completa los campos!</h3>
-    <?php 
- } else { header("Location: index.html"); 
-} 
+    ?>    <h3 class="ok">¡Mensaje enviado! </h3>
+    <?php } 
+    else {
+    ?>    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
+    <?php}
+     else { ?> <h3 class="bad">¡Por favor completa los campos!</h3>
+    <?php  }
+
+//header("Location: index.html"); 
+ //
