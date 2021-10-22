@@ -25,9 +25,7 @@ $result = $connection->query ( "INSERT INTO formulario (Nombre, Telefono, Correo
     <?php}
     else { ?> <h3 class="bad">¡Por favor completa los campos!</h3>
     <?php  }
-    else {
-        header("Location: index.html"); 
-    }
+
 
 //
  //
