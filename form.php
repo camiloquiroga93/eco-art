@@ -1,7 +1,7 @@
 <?php
 
 $connection = new mysqli("localhost", "root", "", "tpalt");
-$name =  trim ($_POST['nombre']);
+$nombre =  trim ($_POST['nombre']);
 $telefono = trim ($_POST['telefono']);
 $correo = trim ( $_POST['correo'] );
 $mensaje = trim ($_POST['mensaje']);
@@ -23,7 +23,7 @@ $result = $connection->query ( "INSERT INTO formulario (Nombre, Telefono, Correo
     else {
     ?>    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
     <?php}
-     else { ?> <h3 class="bad">¡Por favor completa los campos!</h3>
+    else { ?> <h3 class="bad">¡Por favor completa los campos!</h3>
     <?php  }
 
 //header("Location: index.html"); 
