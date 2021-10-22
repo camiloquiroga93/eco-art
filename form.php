@@ -2,7 +2,7 @@
 
 $connection = new mysqli("localhost", "root", "", "tpalt");
 
-$name =  trim ($_POST['name']);
+$name =  trim ($_POST['nombre']);
 $telefono = trim ($_POST['telefono']);;
 $correo = trim ( $_POST['correo'] );;
 $mensaje = trim ($_POST['mensaje']);;
