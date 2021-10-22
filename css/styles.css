@@ -435,6 +435,22 @@ footer {
     margin-bottom: 30px;
     text-align: center;
 }
+/* php form*/
+
+.ok {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #1e6;
+    color: #ffffff;
+}
+.bad {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #a22;
+    color: #ffffff;
+}
 /* media queries */
 
 @media (max-width: 1032px) {
