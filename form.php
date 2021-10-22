@@ -18,19 +18,12 @@ if (!empty( $_POST["nombre"]) && is_string($_POST["nombre"]) &&    !empty( $_POS
 
 $result = $connection->query( "INSERT INTO formulario (Nombre, Telefono, Correo, Mensaje) VALUES ('$nombre','$telefono','$correo','$mensaje')");
 if ( $result )  { 
-    ?>
-    <h3 class="ok">¡Mensaje enviado! </h3>
-    <?php
-} 
-echo {
-    ?>
-    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
-    <?php
-}
- echo {
-    ?>
-    <h3 class="bad">¡Por favor completa los campos!</h3>
-    <?php 
-  }
+    ?>    <h3 class="ok">¡Mensaje enviado! </h3>
+    <?php } 
+    else {
+    ?>    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
+    <?php}
+     else { ?> <h3 class="bad">¡Por favor completa los campos!</h3>
+    <?php  }
 ?>
 //header("Location: index.html");
