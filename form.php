@@ -21,13 +21,16 @@ if ( $result )  {
     ?>
     <h3 class="ok">¡Mensaje enviado! </h3>
     <?php
-  } else {
+} 
+else {
     ?>
     <h3 class="bad">¡Ups ha ocurrido un error!</h3>
     <?php
-  } else {
+}
+ else {
     ?>
     <h3 class="bad">¡Por favor completa los campos!</h3>
     <?php 
   }
+?>
 //header("Location: index.html");
