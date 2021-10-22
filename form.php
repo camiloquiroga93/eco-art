@@ -20,9 +20,10 @@ $result = $connection->query ( "INSERT INTO formulario (Nombre, Telefono, Correo
   if ( $result ) { 
     ?>    
     <h3 class="ok">¡Mensaje enviado! </h3>
-    <?php } header("Location: index.html"); 
+    <?php }
     else {
     ?>    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
     <?php}
     else { ?> <h3 class="bad">¡Por favor completa los campos!</h3>
     <?php  }
+    if ($result) { header("Location: index.html"); }
