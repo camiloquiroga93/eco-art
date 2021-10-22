@@ -17,7 +17,7 @@ if ( !empty( $_POST["nombre"]) && is_string($_POST["nombre"]) &&
  //}else {     header("Location: index.html");  } 
 
 $result = $connection->query ( "INSERT INTO formulario (Nombre, Telefono, Correo, Mensaje) VALUES ('$nombre','$telefono','$correo','$mensaje')");
-  if ( $result )  { 
+  if ( $result ) header("Location: index.html"); { 
     ?>    <h3 class="ok">¡Mensaje enviado! </h3>
     <?php } 
     else {
