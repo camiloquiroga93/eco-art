@@ -16,7 +16,7 @@ if ( !empty( $_POST["nombre"]) && is_string($_POST["nombre"]) &&
    //$mensaje = $connection->real_escape_string($connection, $_POST["mensaje"]);
  //}else {     header("Location: index.html");  } 
 
-$result = $connection->query( "INSERT INTO formulario (Nombre, Telefono, Correo, Mensaje) VALUES ('$nombre','$telefono','$correo','$mensaje')");
+$result = $connection->query ( "INSERT INTO formulario (Nombre, Telefono, Correo, Mensaje) VALUES ('$nombre','$telefono','$correo','$mensaje')");
   if ( $result )  { 
     ?>    <h3 class="ok">¡Mensaje enviado! </h3>
     <?php } 
